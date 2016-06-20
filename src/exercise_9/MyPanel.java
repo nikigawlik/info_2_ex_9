@@ -47,11 +47,6 @@ class MyPanel extends JPanel {
         // Draw Text
         g.drawString("sierpinski triangle",10,20);
         
-//        int mx = 500;
-//        int my = 600;
-//        int r = 500;
-//        boolean flipped = false;
-        
         int w = this.getWidth()-64;
         int h = this.getHeight()-64;
         w = Math.min(w, h);
@@ -75,7 +70,6 @@ class MyPanel extends JPanel {
     {
     	if(numberOfIterations < 0)
     		return;
-    	
 
 		g.setColor(Color.getHSBColor((numberOfIterations%8)/8.0F, 1.0F, 1.0F));
     	
